@@ -37,5 +37,6 @@ class MeteorologistController < ApplicationController
     @summary_of_next_several_days = parsed_data.dig("daily", "summary")
 
     render("meteorologist/street_to_weather.html.erb")
+    
   end
 end
